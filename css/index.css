@@ -31,14 +31,24 @@ grid-column: 1 / 1;
 grid-row: 1 / 1;
 grid-column: 1 / 1;
 }
-
-/* Just to make the grid visible */
-
 .grid > * {
-background: rgba(0,0,0,0.1);
-border: 1px white solid;
+    background: rgba(0,0,0,0.1);
+    border: 1px white solid;
+    display:block;
+    margin:auto;
 }
-
 #nasa {
     background: url("../img/nasaedit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.grid-item {
+    min-width: 8rem;
+    min-height: 8rem;
+    position:relative;
+    border-radius: 15%;
+}
+.grid-item:hover {
+    border: 5px solid#ffeaa7;
 }
