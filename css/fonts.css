@@ -1,0 +1,9 @@
+/*
+qtpi font by zephyo (angela he)
+@ https://github.com/zephyo/5fonts10hours
+Fonts is under Creative Commons Attribution 3.0. Copyright 2018 Angela He.
+*/
+@font-face {
+    font-family: "qtpi";
+    src: url("fonts/qtpi.ttf") format("truetype");
+}
