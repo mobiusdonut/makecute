@@ -7,3 +7,8 @@ Fonts is under Creative Commons Attribution 3.0. Copyright 2018 Angela He.
     font-family: "qtpi";
     src: url("fonts/qtpi.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "Priamos";
+    src: url("fonts/Priamos-Serial-Heavy-Regular.ttf") format("truetype");
+}

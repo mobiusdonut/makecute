@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript" src="js/index.js"></script>
     </head>
 
     <body>
@@ -14,10 +15,14 @@
         </header>
         <main>
             <div id="info">
-                <span id="infotitle">browse</span>
+                <img id="infoimg" src="img/pfp.png" height="200px"></img>
+                <div>
+                    <h1 id="infotitle">browse</h1>
+                    <p id="infop">click on an item to preview</p>  
+                </div>                 
             </div>
             <div class="grid">
-                <div class="grid-item" id="nasa"></div>
+                <div class="grid-item" id="nasa" onclick="info('nasa')"></div>
                 <div class="grid-item" id="coming-soon"></div>
             </div>                 
         </main>

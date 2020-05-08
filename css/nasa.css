@@ -1,0 +1,28 @@
+h1, p {
+    font-family: "qtpi";
+}
+header {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #ffb6c1;
+}
+body, h1 {
+    margin: 0;
+}
+.container {
+    display: flex;
+    margin: 10px;
+}
+  
+.column {
+    flex: 50%;
+    margin: 5%
+}
+.canvascontainer {
+    text-align: center;
+}
+#nasacanvas {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
