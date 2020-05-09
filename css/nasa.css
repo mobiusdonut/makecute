@@ -1,4 +1,4 @@
-h1, p {
+body {
     font-family: "qtpi";
 }
 header {
@@ -25,4 +25,24 @@ body, h1 {
 #nasacanvas {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+label {
+    font-size: 20px;
+}
+
+form > * {
+    margin: 10px;
+}
+.pretty input:checked ~ .state.p-regblue label::after, .pretty.p-toggle .state.p-regblue label::after {
+    background-color: #0b3d91 !important;
+}
+.pretty input:checked ~ .state.p-coolblue label::after, .pretty.p-toggle .state.p-coolblue label::after {
+    background-color: #4c99d2 !important;
+}
+.pretty input:checked ~ .state.p-gay label::after, .pretty.p-toggle .state.p-gay label::after {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
 }

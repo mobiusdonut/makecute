@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>makecute</title>
+        <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/nasa.css">
@@ -20,8 +21,32 @@
                     <canvas id="nasacanvas" width="500" height="500"></canvas>
                 </div>
                 <div class="column">
-                    <h1>customize</h1>
-                    <button onclick="redraw()">redraw</button>
+                    <h1 class="block">customize</h1>
+                    <br>
+                    <form>
+                        <div class="fixed wrapper block">
+                            <input id="text" type="text" value="NASA" placeholder="Text (like NASA)">
+                        </div>
+                        <div class="pretty p-default p-round">
+                            <input type="radio" name="grd" value="regular blue" default/>
+                            <div class="state p-regblue">
+                                <label>regular blue</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-round">
+                            <input type="radio" name="grd" value="blue but cooler"/>
+                            <div class="state p-coolblue">
+                                <label>blue but cooler</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-round">
+                            <input type="radio" name="grd" value="gay"/>
+                            <div class="state p-gay">
+                                <label>gay</label>
+                            </div>
+                        </div>
+                        <button id="download" class="block">Download</button>
+                    </form>        
                 </div>
             </div>                 
         </main>
