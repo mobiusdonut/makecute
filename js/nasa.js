@@ -15,18 +15,15 @@ $(document).ready(() => {
     var img2 = new Image();
     var img3 = new Image();
     img.src = 'https://github.com/mobiusdonut/makecute/raw/master/img/nasa/backred.png';
-    img.crossOrigin = "anonymous";
     img.onload = () => {
         ctx.drawImage(img, 0, 0, 500, 500);
         ctx.font = "135px Priamos";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
-        ctx.fillText(message, canvas.width/2, canvas.height/2 + 135/4);  
-        img2.crossOrigin = "anonymous"; 
+        ctx.fillText(message, canvas.width/2, canvas.height/2 + 135/4);   
         img2.src = 'https://github.com/mobiusdonut/makecute/raw/master/img/nasa/frontred.png'; 
         img2.onload = () => {
-            ctx.drawImage(img2, 0, 0, 500, 500); 
-            img3.crossOrigin = "anonymous";          
+            ctx.drawImage(img2, 0, 0, 500, 500);           
             img3.src = 'https://github.com/mobiusdonut/makecute/raw/master/img/nasa/stars.png'; 
             img3.onload = () => {
                 ctx.drawImage(img3, 0, 0, 500, 500);
@@ -83,13 +80,5 @@ $(document).ready(() => {
                 break;
         }
         redraw();
-    })
-
-    $("#download").click(() => {
-        event.preventDefault();
-        var link = document.createElement('a');
-        link.download = 'filename.png';
-        link.href = document.getElementById('nasacanvas').toDataURL()
-        link.click();
     })
 });
