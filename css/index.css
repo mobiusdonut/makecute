@@ -4,7 +4,7 @@ body {
 header {
     text-align: center;
     padding: 10px;
-    color: white;
+    color: white !important;
     background-color: #ffb6c1;
 }
 body, h1 {
@@ -66,13 +66,18 @@ body, h1 {
     border: 3px solid #e84393;
     width: 20%;
 }
-a {
+#infolink {
     background-color: #ffb6c1;
     color: white;
     padding: 0.25em 0.5em;
-    text-decoration: none;
     border-radius: 15%;
 }
-a:hover {
+#infolink:hover {
     background-color: #e84393;
+}
+#headerlink {
+    color: white;
+}
+a {
+    text-decoration: none;
 }
