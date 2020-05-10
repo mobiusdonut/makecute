@@ -13,6 +13,9 @@ body, h1 {
 #headerlink {
     color: white;
 }
+a {
+    text-decoration: none;
+}
 .container {
     margin: 10px;
 }
