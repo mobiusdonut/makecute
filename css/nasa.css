@@ -11,13 +11,7 @@ body, h1 {
     margin: 0;
 }
 .container {
-    display: flex;
     margin: 10px;
-}
-  
-.column {
-    flex: 50%;
-    margin: 5%
 }
 .canvascontainer {
     text-align: center;
@@ -33,6 +27,16 @@ label {
 form > * {
     margin: 10px;
 }
+@media screen and (min-width: 800px) {
+    .container {
+        display: flex;
+    }
+      
+    .column {
+        flex: 50%;
+        margin: 5%
+    }
+}
 .pretty input:checked ~ .state.p-regblue label::after, .pretty.p-toggle .state.p-regblue label::after {
     background-color: #0b3d91 !important;
 }
@@ -45,4 +49,11 @@ form > * {
     background: -o-linear-gradient(180deg, #e74c3c 16.67%, #e67e22 16.67%, #e67e22 33.33%, #f1c40f 33.33%, #f1c40f 50%, #2ecc71 50%, #2ecc71 66.67%, #3498db 66.67%, #3498db 83.33%, #9b59b6 83.33%, #9b59b6 100%); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(180deg, #e74c3c 16.67%, #e67e22 16.67%, #e67e22 33.33%, #f1c40f 33.33%, #f1c40f 50%, #2ecc71 50%, #2ecc71 66.67%, #3498db 66.67%, #3498db 83.33%, #9b59b6 83.33%, #9b59b6 100%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(180deg, #e74c3c 16.67%, #e67e22 16.67%, #e67e22 33.33%, #f1c40f 33.33%, #f1c40f 50%, #2ecc71 50%, #2ecc71 66.67%, #3498db 66.67%, #3498db 83.33%, #9b59b6 83.33%, #9b59b6 100%); /* Standard syntax (must be last) */
+}
+.pretty input:checked ~ .state.p-bi label::after, .pretty.p-toggle .state.p-bi label::after {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg, #e84393 40%, #6c5ce7 40%, #6c5ce7 60%, #0984e3 60%, #0984e3 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, #e84393 40%, #6c5ce7 40%, #6c5ce7 60%, #0984e3 60%, #0984e3 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, #e84393 40%, #6c5ce7 40%, #6c5ce7 60%, #0984e3 60%, #0984e3 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, #e84393 40%, #6c5ce7 40%, #6c5ce7 60%, #0984e3 60%, #0984e3 100%); /* Standard syntax (must be last) */
 }

@@ -83,6 +83,15 @@ $(document).ready(() => {
                 grd.addColorStop(5 / 6, '#9b59b6');
                 grd.addColorStop(1, '#9b59b6');
                 break;
+            case "bi":
+                grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                grd.addColorStop(0, '#e84393');
+                grd.addColorStop(1 / 3, '#e84393');
+                grd.addColorStop(1 / 3, '#6c5ce7');
+                grd.addColorStop(2 / 3, '#6c5ce7');
+                grd.addColorStop(2 / 3, '#0984e3');
+                grd.addColorStop(1, '#0984e3');
+                break;
         }
         redraw();
     })
