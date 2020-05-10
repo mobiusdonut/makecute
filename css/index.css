@@ -1,4 +1,4 @@
-h1 {
+body {
     font-family: "qtpi";
 }
 header {
@@ -56,9 +56,6 @@ body, h1 {
     margin-bottom: 15px;
     text-align: center;
 }
-#infotitle, #infop, #features {
-    font-family: "qtpi";
-}
 #infoimg {
     border-radius: 50%;
     border: 3px solid #e84393;
@@ -68,4 +65,14 @@ body, h1 {
 #imgwrap {
     border: 3px solid #e84393;
     width: 20%;
+}
+a {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    border-radius: 15%;
+}
+a:hover {
+    background-color: #e84393;
 }
