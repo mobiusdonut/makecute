@@ -70,13 +70,18 @@ $(document).ready(() => {
                 break;
             case "gay":
                 grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
-                grd.addColorStop(0, 'red');
-                grd.addColorStop(1 / 6, 'orange');
-                grd.addColorStop(2 / 6, 'yellow');
-                grd.addColorStop(3 / 6, 'green');
-                grd.addColorStop(4 / 6, 'blue');
-                grd.addColorStop(5 / 6, 'indigo');
-                grd.addColorStop(1, 'violet');
+                grd.addColorStop(0, '#e74c3c');
+                grd.addColorStop(1 / 6, '#e74c3c');
+                grd.addColorStop(1 / 6, '#e67e22');
+                grd.addColorStop(2 / 6, '#e67e22');
+                grd.addColorStop(2 / 6, '#f1c40f');
+                grd.addColorStop(3 / 6, '#f1c40f');
+                grd.addColorStop(3 / 6, '#2ecc71');
+                grd.addColorStop(4 / 6, '#2ecc71');
+                grd.addColorStop(4 / 6, '#3498db');
+                grd.addColorStop(5 / 6, '#3498db');
+                grd.addColorStop(5 / 6, '#9b59b6');
+                grd.addColorStop(1, '#9b59b6');
                 break;
         }
         redraw();

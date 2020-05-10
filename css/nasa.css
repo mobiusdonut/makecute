@@ -41,8 +41,8 @@ form > * {
 }
 .pretty input:checked ~ .state.p-gay label::after, .pretty.p-toggle .state.p-gay label::after {
     background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(top, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(180deg, #e74c3c 16.67%, #e67e22 16.67%, #e67e22 33.33%, #f1c40f 33.33%, #f1c40f 50%, #2ecc71 50%, #2ecc71 66.67%, #3498db 66.67%, #3498db 83.33%, #9b59b6 83.33%, #9b59b6 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, #e74c3c 16.67%, #e67e22 16.67%, #e67e22 33.33%, #f1c40f 33.33%, #f1c40f 50%, #2ecc71 50%, #2ecc71 66.67%, #3498db 66.67%, #3498db 83.33%, #9b59b6 83.33%, #9b59b6 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, #e74c3c 16.67%, #e67e22 16.67%, #e67e22 33.33%, #f1c40f 33.33%, #f1c40f 50%, #2ecc71 50%, #2ecc71 66.67%, #3498db 66.67%, #3498db 83.33%, #9b59b6 83.33%, #9b59b6 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, #e74c3c 16.67%, #e67e22 16.67%, #e67e22 33.33%, #f1c40f 33.33%, #f1c40f 50%, #2ecc71 50%, #2ecc71 66.67%, #3498db 66.67%, #3498db 83.33%, #9b59b6 83.33%, #9b59b6 100%); /* Standard syntax (must be last) */
 }
