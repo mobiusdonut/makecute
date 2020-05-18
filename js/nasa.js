@@ -4,8 +4,9 @@ $(document).ready(() => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     var message = "NASA";
     var grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    grd.addColorStop(0, "#032275");
-    grd.addColorStop(1, "#4c99d2");
+    grd.addColorStop(0, "#0b3d91");
+    grd.addColorStop(1, "#0b3d91");
+    var textcolor = "white";
     
     ctx.fillStyle = grd;
     ctx.beginPath();
@@ -44,7 +45,7 @@ $(document).ready(() => {
             fontsize--;
             ctx.font=fontsize+"px Priamos";
         } while (ctx.measureText(message).width>canvas.width - 50)
-        ctx.fillStyle = "white";
+        ctx.fillStyle = textcolor;
         ctx.textAlign = "center";
         ctx.fillText(message, canvas.width/2, canvas.height/2 + fontsize/4, 450);
         ctx.drawImage(img2, 0, 0, 500, 500);
@@ -62,11 +63,13 @@ $(document).ready(() => {
                 grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
                 grd.addColorStop(0, "#0b3d91");
                 grd.addColorStop(1, "#0b3d91");
+                textcolor = "white";
                 break;
             case "blue but cooler":
                 grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
                 grd.addColorStop(0, "#032275");
                 grd.addColorStop(1, "#4c99d2");
+                textcolor = "white";
                 break;
             case "gay":
                 grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
@@ -82,6 +85,7 @@ $(document).ready(() => {
                 grd.addColorStop(5 / 6, '#3498db');
                 grd.addColorStop(5 / 6, '#9b59b6');
                 grd.addColorStop(1, '#9b59b6');
+                textcolor = "white";
                 break;
             case "bi":
                 grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
@@ -91,8 +95,44 @@ $(document).ready(() => {
                 grd.addColorStop(2 / 3, '#6c5ce7');
                 grd.addColorStop(2 / 3, '#0984e3');
                 grd.addColorStop(1, '#0984e3');
+                textcolor = "white";
+                break;
+            case "lesbian":
+                grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                grd.addColorStop(0, '#d62900');
+                grd.addColorStop(1 / 5, '#d62900');
+                grd.addColorStop(1 / 5, '#ff9b55');
+                grd.addColorStop(2 / 5, '#ff9b55');
+                grd.addColorStop(2 / 5, '#ffffff');
+                grd.addColorStop(3 / 5, '#ffffff');
+                grd.addColorStop(3 / 5, '#d461a6');
+                grd.addColorStop(4 / 5, '#d461a6');
+                grd.addColorStop(4 / 5, '#a50062');
+                grd.addColorStop(1, '#a50062');
+                textcolor = "black";
+                break;
+            case "trans":
+                grd = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                grd.addColorStop(0, '#55cdfc');
+                grd.addColorStop(1 / 5, '#55cdfc');
+                grd.addColorStop(1 / 5, '#f7a8b8');
+                grd.addColorStop(2 / 5, '#f7a8b8');
+                grd.addColorStop(2 / 5, '#ffffff');
+                grd.addColorStop(3 / 5, '#ffffff');
+                grd.addColorStop(3 / 5, '#f7a8b8');
+                grd.addColorStop(4 / 5, '#f7a8b8');
+                grd.addColorStop(4 / 5, '#55cdfc');
+                grd.addColorStop(1, '#55cdfc');
+                textcolor = "black";
                 break;
         }
         redraw();
-    })
+    });
+
+    $(".tablinks").click((event) => {
+        event.preventDefault();
+        $(".tabcontent").hide();
+        $(".tablinks").removeClass("active");
+        $("#" + event.target.innerHTML.replace(" ", "-")).show();
+    });
 });

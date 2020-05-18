@@ -31,8 +31,10 @@ label {
 }
 
 form > * {
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
+
 @media screen and (min-width: 800px) {
     .container {
         display: flex;
@@ -43,6 +45,46 @@ form > * {
         margin: 5%
     }
 }
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #e84393;
+    background-color: #ffb6c1;
+    margin-top: 10px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 18px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: "qtpi";
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #e84393;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #e84393;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 12px 12px;
+    border: 1px solid #e84393;
+    border-top: none;
+    margin-bottom: 10px;
+  }
+
 .pretty input:checked ~ .state.p-regblue label::after, .pretty.p-toggle .state.p-regblue label::after {
     background-color: #0b3d91 !important;
 }
@@ -62,4 +104,18 @@ form > * {
     background: -o-linear-gradient(180deg, #e84393 40%, #6c5ce7 40%, #6c5ce7 60%, #0984e3 60%, #0984e3 100%); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(180deg, #e84393 40%, #6c5ce7 40%, #6c5ce7 60%, #0984e3 60%, #0984e3 100%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(180deg, #e84393 40%, #6c5ce7 40%, #6c5ce7 60%, #0984e3 60%, #0984e3 100%); /* Standard syntax (must be last) */
+}
+.pretty input:checked ~ .state.p-lesbian label::after, .pretty.p-toggle .state.p-lesbian label::after {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg, #d62900 20%, #ff9b55 20%, #ff9b55 40%, #ffffff 40%, #ffffff 60%, #d461a6 60%, #d461a6 80%, #a50062 80%, #a50062 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, #d62900 20%, #ff9b55 20%, #ff9b55 40%, #ffffff 40%, #ffffff 60%, #d461a6 60%, #d461a6 80%, #a50062 80%, #a50062 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, #d62900 20%, #ff9b55 20%, #ff9b55 40%, #ffffff 40%, #ffffff 60%, #d461a6 60%, #d461a6 80%, #a50062 80%, #a50062 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, #d62900 20%, #ff9b55 20%, #ff9b55 40%, #ffffff 40%, #ffffff 60%, #d461a6 60%, #d461a6 80%, #a50062 80%, #a50062 100%); /* Standard syntax (must be last) */
+}
+.pretty input:checked ~ .state.p-trans label::after, .pretty.p-toggle .state.p-trans label::after {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg, #55cdfc 20%, #f7a8b8 20%, #f7a8b8 40%, #ffffff 40%, #ffffff 60%, #f7a8b8 60%, #f7a8b8 80%, #55cdfc 80%, #55cdfc 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, #55cdfc 20%, #f7a8b8 20%, #f7a8b8 40%, #ffffff 40%, #ffffff 60%, #f7a8b8 60%, #f7a8b8 80%, #55cdfc 80%, #55cdfc 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, #55cdfc 20%, #f7a8b8 20%, #f7a8b8 40%, #ffffff 40%, #ffffff 60%, #f7a8b8 60%, #f7a8b8 80%, #55cdfc 80%, #55cdfc 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, #55cdfc 20%, #f7a8b8 20%, #f7a8b8 40%, #ffffff 40%, #ffffff 60%, #f7a8b8 60%, #f7a8b8 80%, #55cdfc 80%, #55cdfc 100%); /* Standard syntax (must be last) */
 }

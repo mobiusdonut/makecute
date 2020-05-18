@@ -20,6 +20,22 @@
         <meta property="og:site_name" content="nasa pfp @makecute">
         <meta property="twitter:image:src" content="https://github.com/mobiusdonut/makecute/raw/master/img/thumbnail.png">
         <meta name="twitter:image:alt" content="Customize the NASA logo for semi-evil reasons.">
+        <script>
+            function openTab(evt, cityName) {
+                evt.preventDefault();
+              var i, tabcontent, tablinks;
+              $(".tabcontent").hide();
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+        </script>
     </head>
 
     <body>
@@ -39,30 +55,58 @@
                             <input id="text" type="text" value="NASA" placeholder="Text (like NASA)">
                         </div>
                         <br>
-                        <div class="pretty p-default p-round">
-                            <input type="radio" name="grd" value="regular blue" default/>
-                            <div class="state p-regblue">
-                                <label>regular blue</label>
+                        <div class="tab">
+                            <button class="tablinks">Aesthetic</button>
+                            <button class="tablinks">Pride Flags</button>
+                            <button class="tablinks">Custom</button>
+                        </div>
+                        
+                        <div id="Aesthetic" class="tabcontent">
+                            <div class="pretty p-default p-round">
+                                <input type="radio" name="grd" value="regular blue" checked/>
+                                <div class="state p-regblue">
+                                    <label>regular blue</label>
+                                </div>
+                            </div>
+                            <div class="pretty p-default p-round">
+                                <input type="radio" name="grd" value="blue but cooler"/>
+                                <div class="state p-coolblue">
+                                    <label>blue but cooler</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="pretty p-default p-round">
-                            <input type="radio" name="grd" value="blue but cooler"/>
-                            <div class="state p-coolblue">
-                                <label>blue but cooler</label>
+                        
+                        <div id="Pride-Flags" class="tabcontent">
+                            <div class="pretty p-default p-round">
+                                <input type="radio" name="grd" value="gay"/>
+                                <div class="state p-gay">
+                                    <label>gay</label>
+                                </div>
+                            </div>
+                            <div class="pretty p-default p-round">
+                                <input type="radio" name="grd" value="bi"/>
+                                <div class="state p-bi">
+                                    <label>bi</label>
+                                </div>
+                            </div>
+                            <div class="pretty p-default p-round">
+                                <input type="radio" name="grd" value="lesbian"/>
+                                <div class="state p-lesbian">
+                                    <label>lesbian</label>
+                                </div>
+                            </div>
+                            <div class="pretty p-default p-round">
+                                <input type="radio" name="grd" value="trans"/>
+                                <div class="state p-trans">
+                                    <label>trans</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="pretty p-default p-round">
-                            <input type="radio" name="grd" value="gay"/>
-                            <div class="state p-gay">
-                                <label>gay</label>
-                            </div>
+                        
+                        <div id="Custom" class="tabcontent">
+
                         </div>
-                        <div class="pretty p-default p-round">
-                            <input type="radio" name="grd" value="bi"/>
-                            <div class="state p-bi">
-                                <label>bi</label>
-                            </div>
-                        </div>
+                        
                         <p>right click (or press hold on mobile) to download</p>
                     </form>        
                 </div>
